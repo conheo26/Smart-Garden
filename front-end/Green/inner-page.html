@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Detection - Smart Garden</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Green
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <style>
+        .container {
+            margin: auto;
+        }
+        
+        #video {
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 2px 2px 3px black;
+            width: 320px;
+            height: 240px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        video.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #photo {
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 2px 2px 3px black;
+            width: 320px;
+            height: 240px;
+            margin: auto;
+        }
+        
+        #canvas {
+            display: none;
+        }
+        
+        .camera {
+            width: 340px;
+            display: inline-block;
+        }
+        
+        .output {
+            width: 340px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        #startbutton {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 35px;
+            border-radius: 8px;
+            background-color: rgba(70, 211, 70, 0.7);
+            border: 2px solid rgb(255 255 255 / 100%);
+            border-radius: 5px;
+            box-shadow: 0px 0px 1px 2px rgb(0 0 0 / 20%);
+            font-size: 14px;
+            font-family: "Lucida Grande", "Arial", sans-serif;
+            color: rgb(255 255 255 / 100%);
+        }
+        
+        .contentarea {
+            font-size: 16px;
+            font-family: "Lucida Grande", "Arial", sans-serif;
+            width: 760px;
+            margin: auto;
+        }
+    </style>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
+                <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+            </div>
+            <div class="social-links d-none d-md-block">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">Smart Garden</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="inner-page.html">Disease Recognition</a></li>
+                    <li><a class="nav-link scrollto " href="index.html">Gallery</a></li>
+                    <li><a class="nav-link scrollto" href="index.html">Team</a></li>
+                    <li class="dropdown"><a href="graph.html"><span>Gardening</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="graph.html">Watering </a></li>
+                            <li><a href="graph.html">Lighting </a></li>
+                            <li><a href="graph.html">Temp and Humidity</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="index.html">Logout</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Disease Detection</h2>
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Disease Detection</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <section class="inner-page">
+            <div class="container" style="text-align:center; display: block;">
+
+                <div>
+                    <h1 style="text-align:center" id="prediction"></h1>
+                </div>
+
+                <div style="text-align:center" class="camera">
+                    <video id="video" class="center">Video stream not available.</video>
+                    <button id="startbutton">Take photo</button>
+                </div>
+
+                <canvas style="text-align:center" id="canvas"> </canvas>
+                <div class="output">
+                    <img id="photo" alt="The screen capture will appear in this box." />
+                </div>
+                <script>
+                    let ws;
+                    const hostname = window.location.hostname;
+                    const port = window.location.port ? ':' + window.location.port : '';
+                    const baseUrl = hostname + port;
+                    ws = new WebSocket("ws://" + baseUrl + "/ws");
+                    // ws = new WebSocket("ws://localhost:8000/ws");
+                    ws.onopen = () => console.log("Connected to WebSocket");
+
+                    ws.onmessage = function(event) {
+                        console.log('Received message from server:', event.data);
+                        document.getElementById("prediction").innerHTML = event.data
+                    };
+
+                    // var video = document.querySelector("#videoElement ");
+
+                    // if (navigator.mediaDevices.getUserMedia) {
+                    //     navigator.mediaDevices.getUserMedia({
+                    //             video: true
+                    //         })
+                    //         .then(function(stream) {
+                    //             video.srcObject = stream;
+                    //         })
+                    //         .catch(function(err0r) {
+                    //             console.log("Something went wrong! ");
+                    //         });
+                    // } else {
+                    //     console.log("Not supported ");
+                    // }
+
+                    // function stop(e) {
+                    //     var stream = video.srcObject;
+                    //     var tracks = stream.getTracks();
+
+                    //     for (var i = 0; i < tracks.length; i++) {
+                    //         var track = tracks[i];
+                    //         track.stop();
+                    //     }
+
+                    //     video.srcObject = null;
+                    // }
+                    (() => {
+                        // The width and height of the captured photo. We will set the
+                        // width to the value defined here, but the height will be
+                        // calculated based on the aspect ratio of the input stream.
+
+                        const width = 320; // We will scale the photo width to this
+                        let height = 0; // This will be computed based on the input stream
+
+                        // |streaming| indicates whether or not we're currently streaming
+                        // video from the camera. Obviously, we start at false.
+
+                        let streaming = false;
+
+                        // The various HTML elements we need to configure or control. These
+                        // will be set by the startup() function.
+
+                        let video = null;
+                        let canvas = null;
+                        let photo = null;
+                        let startbutton = null;
+
+                        function showViewLiveResultButton() {
+                            if (window.self !== window.top) {
+                                // Ensure that if our document is in a frame, we get the user
+                                // to first open it in its own tab or window. Otherwise, it
+                                // won't be able to request permission for camera access.
+                                document.querySelector(".contentarea").remove();
+                                const button = document.createElement("button");
+                                button.textContent = "View live result of the example code above";
+                                document.body.append(button);
+                                button.addEventListener("click", () => window.open(location.href));
+                                return true;
+                            }
+                            return false;
+                        }
+
+                        function startup() {
+                            if (showViewLiveResultButton()) {
+                                return;
+                            }
+                            video = document.getElementById("video");
+                            canvas = document.getElementById("canvas");
+                            photo = document.getElementById("photo");
+                            startbutton = document.getElementById("startbutton");
+
+                            navigator.mediaDevices
+                                .getUserMedia({
+                                    video: true,
+                                    audio: false
+                                })
+                                .then((stream) => {
+                                    video.srcObject = stream;
+                                    setInterval(() => {
+                                        const canvas = document.createElement('canvas');
+                                        const context = canvas.getContext('2d');
+                                        canvas.width = video.videoWidth;
+                                        canvas.height = video.videoHeight;
+                                        context.drawImage(video, 0, 0);
+
+                                        const imageData = canvas.toDataURL('image/jpeg', 0.5); // Adjust quality (0-1)
+                                        ws.send(imageData);
+                                        console.log("send data");
+                                    }, 1000); // Send frame every 1000 milliseconds (1 seconds)
+                                    video.play();
+                                })
+                                .catch((err) => {
+                                    console.error(`An error occurred: ${err}`);
+                                });
+
+                            video.addEventListener(
+                                "canplay",
+                                (ev) => {
+                                    if (!streaming) {
+                                        height = video.videoHeight / (video.videoWidth / width);
+
+                                        // Firefox currently has a bug where the height can't be read from
+                                        // the video, so we will make assumptions if this happens.
+
+                                        if (isNaN(height)) {
+                                            height = width / (4 / 3);
+                                        }
+
+                                        video.setAttribute("width", width);
+                                        video.setAttribute("height", height);
+                                        canvas.setAttribute("width", width);
+                                        canvas.setAttribute("height", height);
+                                        streaming = true;
+                                    }
+                                },
+                                false,
+                            );
+
+                            startbutton.addEventListener(
+                                "click",
+                                (ev) => {
+                                    takepicture();
+                                    ev.preventDefault();
+                                },
+                                false,
+                            );
+
+                            clearphoto();
+                        }
+
+                        // Fill the photo with an indication that none has been
+                        // captured.
+
+                        function clearphoto() {
+                            const context = canvas.getContext("2d");
+                            context.fillStyle = "#AAA";
+                            context.fillRect(0, 0, canvas.width, canvas.height);
+
+                            const data = canvas.toDataURL("image/png");
+                            photo.setAttribute("src", data);
+                        }
+
+                        // Capture a photo by fetching the current contents of the video
+                        // and drawing it into a canvas, then converting that to a PNG
+                        // format data URL. By drawing it on an offscreen canvas and then
+                        // drawing that to the screen, we can change its size and/or apply
+                        // other changes before drawing it.
+
+                        function takepicture() {
+                            const context = canvas.getContext("2d");
+                            if (width && height) {
+                                canvas.width = width;
+                                canvas.height = height;
+                                context.drawImage(video, 0, 0, width, height);
+
+                                const data = canvas.toDataURL("image/png");
+                                photo.setAttribute("src", data);
+                            } else {
+                                clearphoto();
+                            }
+                        }
+
+                        // Set up our event listener to run the startup process
+                        // once loading is complete.
+                        window.addEventListener("load", startup, false);
+                    })();
+                </script>
+            </div>
+        </section>
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Smart Garden</h3>
+            <p>Each plant, unique and perfect</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Smart Garden</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Smart Garden-free-one-page-bootstrap-template/ -->
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="# " class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>
+
+</html>
